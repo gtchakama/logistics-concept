@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trip Planner
+
+Trip Planner is a Next.js-based web application that helps users organize passengers into vehicles for group trips. It provides an intuitive drag-and-drop interface for easy management of passengers and vehicles.
+
+## Features
+
+- Add and manage passengers
+- Create, edit, and delete vehicles
+- Drag-and-drop functionality for assigning passengers to vehicles
+- Search functionality for finding specific passengers
+- Real-time updates on vehicle capacity
+- Responsive design for various screen sizes
+
+## Technologies Used
+
+- Next.js
+- React
+- react-beautiful-dnd (for drag-and-drop functionality)
+- react-toastify (for notifications)
+- Tailwind CSS (for styling)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 12 or higher)
+- npm (usually comes with Node.js)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone https://github.com/gtchakama/logistics-concept.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Navigate to the project directory:
+   ```
+   cd logistics-concept
+   ```
 
-## Learn More
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open your browser and visit `http://localhost:3000` to see the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. **Add Passengers**: The left panel displays a list of passengers. You can add new passengers by editing the initial state in the code.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Create Vehicles**: Use the "Add New Vehicle" form to create vehicles with a name and passenger capacity.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Assign Passengers**: Drag passengers from the left panel to the vehicle cards on the right. You can also drag passengers between vehicles.
+
+4. **Edit Vehicles**: Click the "Edit" button on a vehicle card to modify its name or capacity.
+
+5. **Remove Passengers**: Click the "Remove" button next to a passenger in a vehicle to return them to the unassigned list.
+
+6. **Delete Vehicles**: Click the "Delete" button on a vehicle card to remove it and return its passengers to the unassigned list.
+
+7. **Search Passengers**: Use the search bar above the passenger list to filter passengers by name.
+
+## Use Cases and Potential Modifications
+
+1. **School Field Trips**: Organize students into buses for field trips. Modify to include additional fields like grade level or emergency contact information.
+
+2. **Corporate Event Planning**: Arrange employees into transportation for company retreats or events. Add fields for departments or dietary preferences.
+
+3. **Sports Team Management**: Organize players into vehicles for away games. Modify to include positions or equipment requirements.
+
+4. **Tour Group Management**: Arrange tourists into different tour vehicles. Add fields for language preferences or mobility requirements.
+
+5. **Wedding Planning**: Organize guests into transportation for different wedding events. Modify to include relationship to bride/groom or meal preferences.
+
+6. **Conference Logistics**: Manage attendees' transportation to different conference venues. Add fields for session tracks or networking preferences.
+
+7. **Disaster Relief Coordination**: Organize relief workers or evacuees into vehicles. Modify to include skills or medical needs.
+
+8. **Restaurant Table Management**: Adapt the concept to arrange diners into tables. Modify vehicles to represent tables with different capacities.
+
+9. **Volunteer Event Coordination**: Organize volunteers into teams or work areas. Add fields for skills or availability.
+
+10. **Military Logistics**: Arrange personnel into different transport vehicles. Add fields for rank or specialization.
+
+To implement these use cases, consider adding more fields to the passenger and vehicle data structures, implementing a backend for data persistence, and adding authentication for multi-user scenarios.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
